@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="todo-app">
+        <header>
+            <h1>Todo App</h1>
+        </header>
+        
+        <section class="todo-input">
+            <input type="text" id="todo-text" placeholder="新しいタスクを入力..." maxlength="200">
+            <button id="add-todo" type="button">追加</button>
+            <div id="error-message" class="error-message" style="display: none;"></div>
+        </section>
+        
+        <section class="todo-list-container">
+            <ul id="todo-list" class="todo-list">
+                <!-- タスクがここに動的に追加されます -->
+            </ul>
+            <div id="empty-message" class="empty-message" style="display: none;">
+                タスクがありません
+            </div>
+        </section>
+    </div>
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
